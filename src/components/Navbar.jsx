@@ -9,10 +9,10 @@ const Navbar = () => {
       </div>
 
       <div className="m-8 flex items-center justify-center gap-4">
-        <a href="https://www.linkedin.com/tusharpimple782" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/tusharpimple782" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
-        <a href="https://www.linkedin.com/in/tusharpimple782/" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/tushar782" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
         <a href="https://twitter.com/TusharPimple017" target="_blank" rel="noopener noreferrer">

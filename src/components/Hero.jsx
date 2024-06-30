@@ -21,9 +21,10 @@ const Hero = () => {
                             variants={container(0)}
                             initial="hidden"
                             animate="visible"
-                            className="pb-16 text-6xl font-thin tracking-tight lg:mt-12 lg:text-6xl">
+                            className="pb-16 text-6xl font-bold tracking-tight lg:mt-12 lg:text-6xl">
                             TUSHAR PIMPLE
                         </motion.h1>
+
                         <motion.span
                             variants={container(0.5)}
                             initial="hidden"
@@ -40,11 +41,11 @@ const Hero = () => {
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8">
                     <div className="flex justify-center">
-                        <motion.img 
-                        initial={{x: 100, opacity:0}}
-                        animate={{x:0, opacity: 1}}
-                        transition={{ duration: 1 , delay: 1.2}}
-                        src={profilepic} alt="tushar"  style={{ maxWidth: "400px", maxHeight: "400px" }} />
+                        <motion.img
+                            initial={{ x: 100, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 1, delay: 1.2 }}
+                            src={profilepic} alt="tushar" style={{ maxWidth: "400px", maxHeight: "400px" }} />
                     </div>
                 </div>
             </div>

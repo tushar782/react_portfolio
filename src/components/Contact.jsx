@@ -1,6 +1,6 @@
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa"; // Import icons
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
     return (
@@ -18,25 +18,55 @@ const Contact = () => {
                     initial={{ opacity: 0, x: -100 }}
                     transition={{ duration: 1 }}
                     className="my-4 text-gray-600 text-white">
-                    <FaMapMarkerAlt className="inline-block mr-2" /> {/* Location Icon */}
-                    {CONTACT.address}
+                    <a 
+                        href="https://www.google.com/maps/place/Kolhapur,+Maharashtra,+India" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-white hover:underline"
+                    >
+                        <FaMapMarkerAlt className="inline-block mr-2" /> {/* Location Icon */}
+                        {CONTACT.address}
+                    </a>
                 </motion.p>
                 <motion.p
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 100 }}
                     transition={{ duration: 1 }}
                     className="my-4 text-blue-600">
-                    <FaPhone className="inline-block mr-2" style={{ transform: 'rotate(180deg)' }} /> {/* Rotated Phone Icon */}
-                    {CONTACT.phoneNo}
+                    <a href={`tel:${CONTACT.phoneNo}`} className="text-blue-600 hover:underline">
+                        <FaPhone className="inline-block mr-2" style={{ transform: 'rotate(180deg)' }} /> {/* Rotated Phone Icon */}
+                        {CONTACT.phoneNo}
+                    </a>
                 </motion.p>
                 <motion.p
                     whileInView={{ opacity: 1, z: 0 }}
                     initial={{ opacity: 0, z: -100 }}
                     transition={{ duration: 1 }}
                     className="my-4 text-purple-600">
-                    <FaEnvelope className="inline-block mr-2" /> {/* Email Icon */}
-                    {CONTACT.email}
+                    <a href={`mailto:${CONTACT.email}`} className="text-purple-600 hover:underline">
+                        <FaEnvelope className="inline-block mr-2" /> {/* Email Icon */}
+                        {CONTACT.email}
+                    </a>
                 </motion.p>
+            </div>
+            <div className="mt-10 text-center">
+                <motion.div
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    transition={{ duration: 0.5 }}
+                    className="flex justify-center space-x-4"
+                >
+                    <a href="https://www.linkedin.com/in/tusharpimple782" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-700">
+                        <FaLinkedin className="text-3xl" />
+                    </a>
+                    <a href="https://github.com/tushar782" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-700">
+                        <FaGithub className="text-3xl" />
+                    </a>
+                    <a href="https://twitter.com/TusharPimple017" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
+                        <FaTwitter className="text-3xl" />
+                    </a>
+                </motion.div>
+                <p className="mt-4 text-gray-500">&copy; 2024 Tushar Pimple. All Rights Reserved.</p>
             </div>
         </div>
     );

@@ -2,6 +2,7 @@ import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import  resume  from "../assets/projects/Tushar Pimple1.pdf"
 
 const Project = () => {
     const [currentColorIndex, setCurrentColorIndex] = useState(0);
@@ -15,7 +16,6 @@ const Project = () => {
         return () => clearInterval(interval);
     }, [colors.length]);
 
-    const resumePath = "/assets/projects/Tushar Pimple.pdf"; // Adjust the path accordingly
 
     return (
         <div className="border-b border-neutral-900 pb-4">
@@ -66,7 +66,7 @@ const Project = () => {
                 className="mt-6 mx-auto block bg-white text-white font-bold px-3 py-2 rounded-md shadow-lg text-sm md:text-base"
                 style={{ backgroundColor: colors[currentColorIndex], transition: 'background-color 0.1s ease' }}
             >
-                <a href={resumePath} download className="flex items-center justify-center space-x-2">
+                <a href={resume} download className="flex items-center justify-center space-x-2">
                     <FaDownload className="text-lg md:text-xl" />
                     <span className="hidden md:inline">Download CV</span>
                 </a>

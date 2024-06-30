@@ -1,12 +1,26 @@
-import About from "./components/About"
-import Contact from "./components/Contact"
-import Exprience from "./components/Exprience"
-import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
-import Project from "./components/Project"
-import Technologies from "./components/Technologies"
+import { useEffect } from "react";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Exprience from "./components/Exprience"; 
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Project from "./components/Project";
+import Technologies from "./components/Technologies";
 
 const App = () => {
+  useEffect(() => {
+    const disableRightClick = (e) => {
+      e.preventDefault();
+    };
+
+    document.addEventListener("contextmenu", disableRightClick);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      document.removeEventListener("contextmenu", disableRightClick);
+    };
+  }, []);
+
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
       <div className="fixed top-0 -z-10 h-full w-full">
@@ -18,12 +32,12 @@ const App = () => {
         <Hero />
         <About />
         <Technologies/>
-        <Exprience/>
+        <Exprience/> 
         <Project/>
         <Contact/>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

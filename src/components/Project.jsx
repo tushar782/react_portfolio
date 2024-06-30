@@ -62,7 +62,7 @@ const Project = () => {
                 initial={{ opacity: 0, scale: 0.5 }}
                 transition={{ duration: 0.5 }}
                 whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
+                whileTap={{ scale: 0.5 }}
                 className="mt-6 mx-auto block bg-white text-white font-bold px-3 py-2 rounded-md shadow-lg text-sm md:text-base"
                 style={{ backgroundColor: colors[currentColorIndex], transition: 'background-color 0.1s ease' }}
             >

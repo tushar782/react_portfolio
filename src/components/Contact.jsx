@@ -34,7 +34,7 @@ const Contact = () => {
                     transition={{ duration: 1 }}
                     className="my-4 text-blue-600">
                     <a href={`tel:${CONTACT.phoneNo}`} className="text-blue-600 hover:underline">
-                        <FaPhone className="inline-block mr-2" style={{ transform: 'rotate(180deg)' }} /> {/* Rotated Phone Icon */}
+                        <FaPhone className="inline-block mr-2" style={{ transform: 'rotate(90deg)' }} /> {/* Rotated Phone Icon */}
                         {CONTACT.phoneNo}
                     </a>
                 </motion.p>

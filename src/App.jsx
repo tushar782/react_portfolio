@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Technologies from "./components/Technologies";
+import Education from "./components/Education";
 
 const App = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const App = () => {
       <div className="container mx-auto px-8">
         <Navbar />
         <Hero />
+        <Education/>
         <About />
         <Technologies/>
         <Exprience/> 

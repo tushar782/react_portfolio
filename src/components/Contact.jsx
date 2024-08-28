@@ -18,9 +18,9 @@ const Contact = () => {
                     initial={{ opacity: 0, x: -100 }}
                     transition={{ duration: 1 }}
                     className="my-4 text-gray-600 text-white">
-                    <a 
-                        href="https://www.google.com/maps/place/Kolhapur,+Maharashtra,+India" 
-                        target="_blank" 
+                    <a
+                        href="https://www.google.com/maps/place/Kolhapur,+Maharashtra,+India"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:underline"
                     >

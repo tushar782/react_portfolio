@@ -16,10 +16,10 @@ const educationData = {
         content: (
             <>
                 <motion.p variants={container(0.1)} className="text-cyan-500">
-                    <strong>School Name:</strong> <span className="text-pink-500">Dipchand C.Vidya, Seloo High School</span>
+                    <strong>School Name:</strong> <span className="text-pink-500">Deepchand Choudhari Vidyalaya, Seloo High School</span>
                 </motion.p>
                 <motion.p variants={container(0.1)} className="text-cyan-500">
-                    <strong>Board Name:</strong> <span className="text-pink-500">Pune Board</span>
+                    <strong>Board Name:</strong> <span className="text-pink-500">Maharashtra State Board</span>
                 </motion.p>
                 <motion.p variants={container(0.2)} className="text-cyan-500">
                     <strong>Passing Year:</strong> <span className="text-pink-500">2016</span>
@@ -38,7 +38,7 @@ const educationData = {
                     <strong>College Name:</strong> <span className="text-pink-500">Indraprastha New Arts Commerce and Science College, Wardha</span>
                 </motion.p>
                 <motion.p variants={container(0.1)} className="text-cyan-500">
-                    <strong>Board Name:</strong> <span className="text-pink-500">Pune Board</span>
+                    <strong>Board Name:</strong> <span className="text-pink-500">Maharashtra State Board</span>
                 </motion.p>
                 <motion.p variants={container(0.2)} className="text-cyan-500">
                     <strong>Passing Year:</strong> <span className="text-pink-500">2018</span>

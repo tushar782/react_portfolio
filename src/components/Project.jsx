@@ -2,7 +2,7 @@ import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import  resume  from "../assets/projects/CurriculumVitae.pdf"
+import resume from "../assets/projects/CurriculumVitae.pdf"
 
 const Project = () => {
     const [currentColorIndex, setCurrentColorIndex] = useState(0);
@@ -16,15 +16,16 @@ const Project = () => {
         return () => clearInterval(interval);
     }, [colors.length]);
 
-
     return (
         <div className="border-b border-neutral-900 pb-4">
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
-                className="my-20 text-center text-4xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent">
-                Projects
+                className="my-20 text-center text-4xl">
+                <span className="bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-600 bg-clip-text text-transparent">
+                    Projects
+                </span>
             </motion.h1>
             <div>
                 {PROJECTS.map((project, index) => (

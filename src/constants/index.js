@@ -3,9 +3,58 @@ import project1 from "../assets/food.jpg";
 import project3 from "../assets/portfolio.jpg";
 import project4 from "../assets/gym1.jpg";
 
-export const HERO_CONTENT = `I am a dedicated and versatile frontend developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies including HTML, CSS, Python, Django, JavaScript, React.js, PostgreSQL, and MongoDB Atlas. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions.`;
+export const HERO_CONTENT = `I am a dedicated and versatile frontend developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies including HTML5,  CSS3,  JavaScript(ES6),  React.js,  PostgreSQL. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile frontend developer with a passion for creating efficient and user-friendly web applications. With 1 year of professional experience, I have worked with a variety of technologies, including ReactJs, Python, JavaScript, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+// export const ABOUT_TEXT = `I am a dedicated and versatile frontend developer with a passion for creating efficient and user-friendly web applications. With 1 year of professional experience, I have worked with a variety of technologies, including ReactJs, Python, JavaScript, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+
+export const ABOUT_TEXT = `
+  <p>Frontend Developer with a diverse background spanning across software development roles. Currently employed at Visual Infosystems Pvt. Ltd. as a Frontend Developer.</p>
+
+  <p>Initiated my professional journey as a Post Graduate Trainee at Compserv Consultants Pvt Ltd, Kolhapur.</p>
+
+  <h2 class="font-bold text-lg mt-4 mb-2 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Key Skills:</h2>
+  <ul class="list-disc list-inside mb-4">
+    <li>Proficient in HTML5, CSS3, and JavaScript (ES6+)</li>
+    <li>Experienced with React.js and other modern JavaScript frameworks</li>
+    <li>Skilled in responsive web design using Flexbox and Grid</li>
+    <li>Knowledgeable in using build tools such as Webpack and Vite</li>
+    <li>Familiar with version control systems like Git and GitHub</li>
+    <li>Techniques for optimizing front-end performance and ensuring cross-browser compatibility</li>
+    <li>Familiar with CI/CD pipelines and deployment processes</li>
+  </ul>
+
+ 
+
+  <h2 class="font-bold text-lg mt-4 mb-2 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Certifications & Courses:</h2>
+  <ul class="list-disc list-inside mb-4">
+    <li>[Certification Name]: A brief description.</li>
+    <li>[SQL(Basic)]: HackerRank.</li>
+  </ul>
+
+  <h2 class="font-bold text-lg mt-4 mb-2 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Contributions:</h2>
+  <ul class="list-disc list-inside mb-4">
+    <li>Contributions to open-source, on-site, live projects or involvement in developer communities.</li>
+  </ul>
+`;
+
+{/* <li>Proficient in debugging, writing unit tests, and applying SEO best practices</li> */}
+
+{/* <li>Experience integrating RESTful APIs and handling data</li> */}
+
+{/* <li>Committed to implementing accessible design practices (a11y)</li> */}
+
+{/* <li>Expertise in CSS frameworks including Tailwind CSS and Bootstrap</li> */}
+
+{/* <h2 class="font-bold text-lg mt-4 mb-2">Highlighted Projects:</h2>
+<ul class="list-disc list-inside mb-4">
+  <li>[Project Name 1]: A brief description of the project, technologies used, and your role.</li>
+  <li>[Project Name 2]: A brief description of the project, technologies used, and your role.</li>
+</ul> */}
+
+// With a cumulative industry experience of 1.0 years, I am enthusiastic about exploring diverse work environments and eager to seize opportunities that foster skill development and growth.`
+
+// Prior to this, served as a Trainee Software Engineer at Celestiq Datatech Pvt. Ltd., Pune, where I honed my skills in frontend technologies.
+
 
 export const EXPERIENCES = [
   {

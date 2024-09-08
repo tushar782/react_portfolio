@@ -24,19 +24,24 @@ const Hero = () => {
                             className="pb-16 text-6xl font-bold tracking-tight lg:mt-12 lg:text-6xl">
                             TUSHAR PIMPLE
                         </motion.h1>
-
                         <motion.span
                             variants={container(0.5)}
                             initial="hidden"
                             animate="visible"
-                            className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">
-                            Software Developer
+                            className="text-3xl tracking-tight">
+                            <span className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Software </span>
+                            <span className="text-blue-500">Developer</span>
                         </motion.span>
+
                         <motion.p
                             variants={container(1)}
                             initial="hidden"
                             animate="visible"
-                            className="my-2 max-w-xl py-6 font-light tracking-tighter">{HERO_CONTENT}</motion.p>
+                            className="my-2 max-w-xl py-6 font-light tracking-tighter font-serif">
+                            {HERO_CONTENT}
+                        </motion.p>
+
+
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8">

@@ -9,8 +9,10 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
-                className="my-10 text-center text-4xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent">
-                Get in Touch
+                className="my-10 text-center text-4xl">
+                <span className="bg-gradient-to-r from-orange-400 via-yellow-500 to-red-500 bg-clip-text text-transparent">
+                    Get in Touch
+                </span>
             </motion.h1>
             <div className="text-center tracking-tighter">
                 <motion.p

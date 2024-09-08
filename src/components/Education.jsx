@@ -97,9 +97,11 @@ const Education = () => {
 
     return (
         <div className="border-b border-neutral-900 pb-4">
-            <h1 className="my-10 text-center text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent">
-                Education
+            <h1 className="my-10 text-center text-3xl sm:text-4xl md:text-5xl">
+                <span className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Edu</span>
+                <span className="text-blue-500">cation</span>
             </h1>
+
 
             {/* Tabs */}
             <div className="flex justify-center flex-wrap space-x-2 sm:space-x-4 mb-6 sm:mb-8">

@@ -26,6 +26,10 @@ export const ABOUT_TEXT = `
  
 
   <h2 class="font-bold text-lg mt-4 mb-2 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Certifications & Courses:</h2>
+  <ul class="list-disc list-inside mb-4">
+   
+    <li>[SQL(Basic)]: HackerRank.</li>
+  </ul>
 
   <h2 class="font-bold text-lg mt-4 mb-2 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Contributions:</h2>
   <ul class="list-disc list-inside mb-4">
@@ -33,12 +37,7 @@ export const ABOUT_TEXT = `
   </ul>
 `;
 
-{/* <ul class="list-disc list-inside mb-4">
-<li>[Certification Name]: A brief description.</li>
-<li>[SQL(Basic)]: HackerRank.</li>
-</ul> */}
-
-
+{/* <li>[Certification Name]: A brief description.</li> */}
 {/* <li>Proficient in debugging, writing unit tests, and applying SEO best practices</li> */}
 
 {/* <li>Experience integrating RESTful APIs and handling data</li> */}

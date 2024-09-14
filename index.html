@@ -3,16 +3,60 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=326663663"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Title and Meta Tags for SEO -->
+  <title>Tushar Portfolio</title>
+  <meta name="description" content="Explore my personal portfolio, showcasing my skills as a Full-Stack Developer with expertise in React, Node.js, and modern web technologies." />
+  <meta name="keywords" content="Tushar, Full-Stack Developer, React Developer, Portfolio, Web Developer, JavaScript" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <!-- Open Graph Meta Tags (for Social Media Sharing) -->
+  <meta property="og:title" content="Tushar | Full-Stack Developer Portfolio" />
+  <meta property="og:description" content="Discover Tushar's Full-Stack Developer portfolio, featuring projects and experiences in web development." />
+  <meta property="og:image" content="https://yourwebsite.com/path-to-image.jpg" /> <!-- Replace with actual image URL -->
+  <meta property="og:url" content="https://react-portfolio-tushar-nu.vercel.app/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tushar | Full-Stack Developer Portfolio" />
+  <meta name="twitter:description" content="Explore my skills, projects, and experience as a Full-Stack Developer." />
+  <meta name="twitter:image" content="https://yourwebsite.com/path-to-image.jpg" /> <!-- Replace with actual image URL -->
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script> <!-- Replace with your correct GA ID -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', '326663663');
+    gtag('config', 'GA_TRACKING_ID'); <!-- Replace with your correct GA ID -->
+  </script>
+
+  <!-- Schema.org JSON-LD Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tushar",
+    "jobTitle": "Full-Stack Developer",
+    "url": "https://react-portfolio-tushar-nu.vercel.app/",
+    "sameAs": [
+      "https://www.linkedin.com/in/your-linkedin", <!-- Replace with your actual LinkedIn URL -->
+      "https://github.com/your-github" <!-- Replace with your actual GitHub URL -->
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Your City",
+      "addressRegion": "Your Region",
+      "addressCountry": "Your Country"
+    }
+  }
   </script>
 
 </head>

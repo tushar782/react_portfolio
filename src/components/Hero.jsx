@@ -29,7 +29,7 @@ const Hero = () => {
                             initial="hidden"
                             animate="visible"
                             className="text-3xl tracking-tight">
-                            <span className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Software </span>
+                            <span className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Frontend </span>
                             <span className="text-blue-500">Developer</span>
                         </motion.span>
 
@@ -40,8 +40,6 @@ const Hero = () => {
                             className="my-2 max-w-xl py-6 font-light tracking-tighter font-serif">
                             {HERO_CONTENT}
                         </motion.p>
-
-
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8">

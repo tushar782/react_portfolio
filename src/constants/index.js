@@ -21,7 +21,6 @@ export const ABOUT_TEXT = `
     <li>Familiar with version control systems like Git and GitHub</li>
     <li>Techniques for optimizing front-end performance and ensuring cross-browser compatibility</li>
     <li>Familiar with CI/CD pipelines and deployment processes</li>
-    <li>Familiarity with version control tools, such as Git | GitHub</li>
   </ul>
 
  

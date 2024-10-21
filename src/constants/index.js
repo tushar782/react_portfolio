@@ -15,12 +15,13 @@ export const ABOUT_TEXT = `
   <h2 class="font-bold text-lg mt-4 mb-2 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Key Skills:</h2>
   <ul class="list-disc list-inside mb-4">
     <li>Proficient in HTML5, CSS3, and JavaScript (ES6+)</li>
-    <li>Experienced with React.js and other modern JavaScript frameworks</li>
+    <li>Experienced with React.js and Familiarity with REST APIs</li>
     <li>Skilled in responsive web design using Flexbox and Grid</li>
     <li>Knowledgeable in using build tools such as Webpack and Vite</li>
     <li>Familiar with version control systems like Git and GitHub</li>
     <li>Techniques for optimizing front-end performance and ensuring cross-browser compatibility</li>
     <li>Familiar with CI/CD pipelines and deployment processes</li>
+    <li>Familiarity with version control tools, such as Git | GitHub</li>
   </ul>
 
  

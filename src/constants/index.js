@@ -62,8 +62,8 @@ export const EXPERIENCES = [
     year: "2023 - Present",
     role: "Frontend Developer",
     company: "VISUAL INFOSYSTEMS Pvt. Ltd.",
-    description: `Lead a team in developing and maintaining web applications, including a school/college management system, using JavaScript, Python, and Django. Implemented stored procedures and functions for data inserting and retrieving.`,
-    technologies: ["HTML5", "CSS", "Python", "Django", "Javascript", "AJAX", "PostgreSQL"],
+    description: `Lead a team in developing and maintaining web applications, including a School / College ERP management system, using JavaScript (ES6), Python, and Django. Implemented stored procedures and functions for data inserting and retrieving.`,
+    technologies: ["HTML5", "CSS", "Python", "Django", "JavaScript", "AJAX", "PostgreSQL"],
   },
   {
     year: "December-2022 - January-2023",

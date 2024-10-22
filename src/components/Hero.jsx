@@ -22,7 +22,7 @@ const Hero = () => {
                             initial="hidden"
                             animate="visible"
                             className="pb-16 text-6xl font-bold tracking-tight lg:mt-12 lg:text-6xl">
-                            TUSHAR PIMPLE
+                            TUSHAR PRAMOD PIMPLE
                         </motion.h1>
                         <motion.span
                             variants={container(0.5)}

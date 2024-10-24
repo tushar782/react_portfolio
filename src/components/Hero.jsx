@@ -29,7 +29,7 @@ const Hero = () => {
                             initial="hidden"
                             animate="visible"
                             className="text-3xl tracking-tight">
-                            <span className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Frontend </span>
+                            <span className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Software </span>
                             <span className="text-blue-500">Developer</span>
                         </motion.span>
 

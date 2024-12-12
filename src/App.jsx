@@ -8,6 +8,7 @@ import Project from "./components/Project";
 import Technologies from "./components/Technologies";
 import Education from "./components/Education";
 import { HelmetProvider } from 'react-helmet-async';
+import FloatingWhatsApp from "./components/FloatingWhatsApp ";
 
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
           <Exprience />
           <Project />
           <Contact />
+          <FloatingWhatsApp/>
         </div>
       </div>
     </HelmetProvider>

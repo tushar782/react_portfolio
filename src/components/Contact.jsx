@@ -1,6 +1,6 @@
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
     return (
@@ -66,14 +66,6 @@ const Contact = () => {
                     </a>
                     <a href="https://twitter.com/TusharPimple017" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
                         <FaTwitter className="text-3xl" />
-                    </a>
-                    <a 
-                        href={`https://wa.me/${+917522994318}?text=Hello%20Tushar!%20I'm%20interested%20in%20your%20services.`} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="text-white hover:text-green-500"
-                    >
-                        <FaWhatsapp className="text-3xl" />
                     </a>
                 </motion.div>
                 <p className="mt-4 text-gray-500">&copy; 2024 Tushar Pimple. All Rights Reserved.</p>

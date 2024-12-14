@@ -3,7 +3,12 @@ import project1 from "../assets/food.jpg";
 import project3 from "../assets/portfolio.jpg";
 import project4 from "../assets/gym1.jpg";
 
-export const HERO_CONTENT = `I am a dedicated and versatile frontend developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies including HTML5,  CSS3,  JavaScript(ES6),  React.js,  PostgreSQL. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions.`;
+export const HERO_CONTENT = ` Dedicated Software Developer with one year of professional experience in
+ JavaScript and React.js. Skilled in developing and implementing scalable,
+ secure, and high-performance web applications optimized for speed and
+ functionality. Proficient in creating user-friendly interfaces and ensuring
+ seamless user experiences through efficient coding practices and modern web
+ development tools.`;
 
 // export const ABOUT_TEXT = `I am a dedicated and versatile frontend developer with a passion for creating efficient and user-friendly web applications. With 1 year of professional experience, I have worked with a variety of technologies, including ReactJs, Python, JavaScript, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
@@ -37,14 +42,14 @@ export const ABOUT_TEXT = `
   </ul>
 `;
 
-{/* <li>[Certification Name]: A brief description.</li> */}
-{/* <li>Proficient in debugging, writing unit tests, and applying SEO best practices</li> */}
+{/* <li>[Certification Name]: A brief description.</li> */ }
+{/* <li>Proficient in debugging, writing unit tests, and applying SEO best practices</li> */ }
 
-{/* <li>Experience integrating RESTful APIs and handling data</li> */}
+{/* <li>Experience integrating RESTful APIs and handling data</li> */ }
 
-{/* <li>Committed to implementing accessible design practices (a11y)</li> */}
+{/* <li>Committed to implementing accessible design practices (a11y)</li> */ }
 
-{/* <li>Expertise in CSS frameworks including Tailwind CSS and Bootstrap</li> */}
+{/* <li>Expertise in CSS frameworks including Tailwind CSS and Bootstrap</li> */ }
 
 {/* <h2 class="font-bold text-lg mt-4 mb-2">Highlighted Projects:</h2>
 <ul class="list-disc list-inside mb-4">

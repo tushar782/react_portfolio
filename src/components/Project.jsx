@@ -67,7 +67,11 @@ const Project = () => {
                 className="mt-6 mx-auto block bg-white text-white font-bold px-3 py-2 rounded-md shadow-lg text-sm md:text-base"
                 style={{ backgroundColor: colors[currentColorIndex], transition: 'background-color 0.1s ease' }}
             >
-                <a href={resume} download className="flex items-center justify-center space-x-2">
+                <a
+                    href={resume}
+                    download="Tushar_Pimple_Resume.pdf"
+                    className="flex items-center justify-center space-x-2"
+                >
                     <FaDownload className="text-lg md:text-xl" />
                     <span className="hidden md:inline">Download CV</span>
                 </a>

@@ -13,7 +13,7 @@ export const HERO_CONTENT = ` Dedicated Software Developer with one year of prof
 // export const ABOUT_TEXT = `I am a dedicated and versatile frontend developer with a passion for creating efficient and user-friendly web applications. With 1 year of professional experience, I have worked with a variety of technologies, including ReactJs, Python, JavaScript, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const ABOUT_TEXT = `
-  <p>Frontend Developer with a diverse background spanning across software development roles. Currently employed at Visual Infosystems Pvt. Ltd. as a Frontend Developer.</p>
+  <p>Full Stack Web Developer with a diverse background spanning across software development roles. Currently employed at Visual Infosystems Pvt. Ltd. as a Frontend Developer.</p>
 
   <p>Initiated my professional journey as a Post Graduate Trainee at Compserv Consultants Pvt Ltd, Kolhapur.</p>
 
@@ -65,7 +65,7 @@ export const ABOUT_TEXT = `
 export const EXPERIENCES = [
   {
     year: "2023 - Present",
-    role: "Frontend Developer",
+    role: "Full Stack Web Developer",
     company: "VISUAL INFOSYSTEMS Pvt. Ltd.",
     description: `Lead a team in developing and maintaining web applications, including a School / College ERP management system, using JavaScript (ES6), Python, and Django. Implemented stored procedures and functions for data inserting and retrieving.`,
     technologies: ["HTML5", "CSS", "Python", "Django", "JavaScript", "AJAX", "PostgreSQL"],

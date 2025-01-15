@@ -1,139 +1,189 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState } from 'react';
+import { motion } from "framer-motion";
 
 const container = (delay = 0) => ({
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.5, delay },
-    },
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, delay },
+  },
 });
 
 const educationData = {
-    ssc: {
-        title: "SSC",
-        content: (
-            <>
-                <motion.p variants={container(0.1)} className="text-cyan-500">
-                    <strong>School Name:</strong> <span className="text-pink-500">Deepchand Choudhari Vidyalaya, Seloo High School</span>
-                </motion.p>
-                <motion.p variants={container(0.1)} className="text-cyan-500">
-                    <strong>Board Name:</strong> <span className="text-pink-500">Maharashtra State Board</span>
-                </motion.p>
-                <motion.p variants={container(0.2)} className="text-cyan-500">
-                    <strong>Passing Year:</strong> <span className="text-pink-500">2016</span>
-                </motion.p>
-                <motion.p variants={container(0.3)} className="text-cyan-500">
-                    <strong>Percentage:</strong> <span className="text-pink-500">62%</span>
-                </motion.p>
-            </>
-        ),
-    },
-    hsc: {
-        title: "HSC",
-        content: (
-            <>
-                <motion.p variants={container(0.1)} className="text-cyan-500">
-                    <strong>College Name:</strong> <span className="text-pink-500">Indraprastha New Arts Commerce and Science College, Wardha</span>
-                </motion.p>
-                <motion.p variants={container(0.1)} className="text-cyan-500">
-                    <strong>Board Name:</strong> <span className="text-pink-500">Maharashtra State Board</span>
-                </motion.p>
-                <motion.p variants={container(0.2)} className="text-cyan-500">
-                    <strong>Passing Year:</strong> <span className="text-pink-500">2018</span>
-                </motion.p>
-                <motion.p variants={container(0.3)} className="text-cyan-500">
-                    <strong>Percentage:</strong> <span className="text-pink-500">52%</span>
-                </motion.p>
-            </>
-        ),
-    },
-    graduation: {
-        title: "GRADUATION",
-        content: (
-            <>
-                <motion.p variants={container(0.1)} className="text-cyan-500">
-                    <strong>College Name:</strong> <span className="text-pink-500">Shree Binzani City College, Nagpur</span>
-                </motion.p>
-                <motion.p variants={container(0.2)} className="text-cyan-500">
-                    <strong>Degree:</strong> <span className="text-pink-500">Bachelor of Commerce in Computer Application</span>
-                </motion.p>
-                <motion.p variants={container(0.3)} className="text-cyan-500">
-                    <strong>Passing Year:</strong> <span className="text-pink-500">2021</span>
-                </motion.p>
-                <motion.p variants={container(0.4)} className="text-cyan-500">
-                    <strong>CGPA:</strong> <span className="text-pink-500">67.57%</span>
-                </motion.p>
-            </>
-        ),
-    },
-    postGraduation: {
-        title: "POST GRADUATION",
-        content: (
-            <>
-                <motion.p variants={container(0.1)} className="text-cyan-500">
-                    <strong>College Name:</strong> <span className="text-pink-500">Chhatrapati Shahu Institute of Business Education And Research, Kolhapur</span>
-                </motion.p>
-                <motion.p variants={container(0.1)} className="text-cyan-500">
-                    <strong>University Name:</strong> <span className="text-pink-500">Shivaji University, Kolhapur</span>
-                </motion.p>
-                <motion.p variants={container(0.2)} className="text-cyan-500">
-                    <strong>Degree:</strong> <span className="text-pink-500">Master of Computer Applications</span>
-                </motion.p>
-                <motion.p variants={container(0.3)} className="text-cyan-500">
-                    <strong>Passing Year:</strong> <span className="text-pink-500">2024</span>
-                </motion.p>
-                <motion.p variants={container(0.4)} className="text-cyan-500">
-                    <strong>CGPA / Percentage:</strong> <span className="text-pink-500">6.10 / 67.76%</span>
-                </motion.p>
-            </>
-        ),
-    },
+  postGraduation: {
+    title: "POST GRADUATION (MCA)",
+    content: (
+      <div className="grid gap-4 text-center">
+        <motion.div variants={container(0.1)} className="p-3 rounded-lg bg-indigo-950/30">
+          <h3 className="text-violet-300 font-mono text-sm mb-1">COLLEGE</h3>
+          <p className="text-orange-300 font-serif text-lg">Chhatrapati Shahu Institute of Business Education And Research, Kolhapur</p>
+        </motion.div>
+        <motion.div variants={container(0.2)} className="p-3 rounded-lg bg-indigo-950/30">
+          <h3 className="text-violet-300 font-mono text-sm mb-1">UNIVERSITY</h3>
+          <p className="text-orange-300 font-serif text-lg">Shivaji University, Kolhapur</p>
+        </motion.div>
+        <motion.div variants={container(0.3)} className="grid grid-cols-2 gap-4">
+          <div className="p-3 rounded-lg bg-indigo-950/30">
+            <h3 className="text-violet-300 font-mono text-sm mb-1">DEGREE</h3>
+            <p className="text-orange-300 font-serif text-lg">Master of Computer Applications</p>
+          </div>
+          <div className="p-3 rounded-lg bg-indigo-950/30">
+            <h3 className="text-violet-300 font-mono text-sm mb-1">YEAR</h3>
+            <p className="text-orange-300 font-serif text-lg">2024</p>
+          </div>
+        </motion.div>
+        <motion.div variants={container(0.4)} className="p-3 rounded-lg bg-indigo-950/30">
+          <h3 className="text-violet-300 font-mono text-sm mb-1">CGPA</h3>
+          <p className="text-orange-300 font-serif text-lg">6.10 (67.76%)</p>
+        </motion.div>
+      </div>
+    ),
+  },
+  graduation: {
+    title: "GRADUATION (BCA)",
+    content: (
+      <div className="grid gap-4 text-center">
+        <motion.div variants={container(0.1)} className="p-3 rounded-lg bg-indigo-950/30">
+          <h3 className="text-violet-300 font-mono text-sm mb-1">COLLEGE</h3>
+          <p className="text-orange-300 font-serif text-lg">Shree Binzani City College, Nagpur</p>
+        </motion.div>
+        <motion.div variants={container(0.2)} className="grid grid-cols-2 gap-4">
+          <div className="p-3 rounded-lg bg-indigo-950/30">
+            <h3 className="text-violet-300 font-mono text-sm mb-1">DEGREE</h3>
+            <p className="text-orange-300 font-serif text-lg">Bachelor of Commerce in Computer Application</p>
+          </div>
+          <div className="p-3 rounded-lg bg-indigo-950/30">
+            <h3 className="text-violet-300 font-mono text-sm mb-1">YEAR</h3>
+            <p className="text-orange-300 font-serif text-lg">2021</p>
+          </div>
+        </motion.div>
+        <motion.div variants={container(0.3)} className="p-3 rounded-lg bg-indigo-950/30">
+          <h3 className="text-violet-300 font-mono text-sm mb-1">CGPA</h3>
+          <p className="text-orange-300 font-serif text-lg">67.57%</p>
+        </motion.div>
+      </div>
+    ),
+  },
+  hsc: {
+    title: "HSC (12th)",
+    content: (
+      <div className="grid gap-4 text-center">
+        <motion.div variants={container(0.1)} className="p-3 rounded-lg bg-indigo-950/30">
+          <h3 className="text-violet-300 font-mono text-sm mb-1">COLLEGE</h3>
+          <p className="text-orange-300 font-serif text-lg">Indraprastha New Arts Commerce and Science College, Wardha</p>
+        </motion.div>
+        <motion.div variants={container(0.2)} className="grid grid-cols-2 gap-4">
+          <div className="p-3 rounded-lg bg-indigo-950/30">
+            <h3 className="text-violet-300 font-mono text-sm mb-1">BOARD</h3>
+            <p className="text-orange-300 font-serif text-lg">Maharashtra State Board</p>
+          </div>
+          <div className="p-3 rounded-lg bg-indigo-950/30">
+            <h3 className="text-violet-300 font-mono text-sm mb-1">YEAR</h3>
+            <p className="text-orange-300 font-serif text-lg">2018</p>
+          </div>
+        </motion.div>
+        <motion.div variants={container(0.3)} className="p-3 rounded-lg bg-indigo-950/30">
+          <h3 className="text-violet-300 font-mono text-sm mb-1">PERCENTAGE</h3>
+          <p className="text-orange-300 font-serif text-lg">52%</p>
+        </motion.div>
+      </div>
+    ),
+  },
+  ssc: {
+    title: "SSC (10th)",
+    content: (
+      <div className="grid gap-4 text-center">
+        <motion.div variants={container(0.1)} className="p-3 rounded-lg bg-indigo-950/30">
+          <h3 className="text-violet-300 font-mono text-sm mb-1">SCHOOL</h3>
+          <p className="text-orange-300 font-serif text-lg">Deepchand Choudhari Vidyalaya, Seloo High School</p>
+        </motion.div>
+        <motion.div variants={container(0.2)} className="grid grid-cols-2 gap-4">
+          <div className="p-3 rounded-lg bg-indigo-950/30">
+            <h3 className="text-violet-300 font-mono text-sm mb-1">BOARD</h3>
+            <p className="text-orange-300 font-serif text-lg">Maharashtra State Board</p>
+          </div>
+          <div className="p-3 rounded-lg bg-indigo-950/30">
+            <h3 className="text-violet-300 font-mono text-sm mb-1">YEAR</h3>
+            <p className="text-orange-300 font-serif text-lg">2016</p>
+          </div>
+        </motion.div>
+        <motion.div variants={container(0.3)} className="p-3 rounded-lg bg-indigo-950/30">
+          <h3 className="text-violet-300 font-mono text-sm mb-1">PERCENTAGE</h3>
+          <p className="text-orange-300 font-serif text-lg">62%</p>
+        </motion.div>
+      </div>
+    ),
+  },
 };
 
 const Education = () => {
-    const [activeTab, setActiveTab] = useState("ssc");
+  const [activeAccordion, setActiveAccordion] = useState(null);
 
-    return (
-        <div className="border-b border-neutral-900 pb-4">
-            <h1 className="my-10 text-center text-3xl sm:text-4xl md:text-5xl">
-                <span className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Edu</span>
-                <span className="text-blue-500">cation</span>
-            </h1>
+  const toggleAccordion = (key) => {
+    setActiveAccordion(activeAccordion === key ? null : key);
+  };
 
+  return (
+    <div className="max-w-4xl mx-auto px-4 py-8 border-b border-indigo-900/30">
+      <h1 className="mb-12 text-center text-4xl sm:text-5xl md:text-6xl font-serif">
+        <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">Edu</span>
+        <span className="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent">cation</span>
+      </h1>
 
-            {/* Tabs */}
-            <div className="flex justify-center flex-wrap space-x-2 sm:space-x-4 mb-6 sm:mb-8">
-                {Object.keys(educationData).map((key) => (
-                    <button
-                        key={key}
-                        className={`px-2 py-1 sm:px-4 sm:py-2 font-semibold ${activeTab === key
-                            ? "text-cyan-300 border-b-2 border-cyan-300"
-                            : "text-neutral-500"
-                            }`}
-                        onClick={() => setActiveTab(key)}
-                    >
-                        {educationData[key].title}
-                    </button>
-                ))}
-            </div>
-
-            {/* Tab Content */}
-            <AnimatePresence mode="wait">
+      <div className="space-y-6">
+        {Object.entries(educationData).map(([key, { title, content }]) => (
+          <div 
+            key={key} 
+            className="border-2 border-indigo-500/20 rounded-xl overflow-hidden bg-gradient-to-br from-indigo-950/90 to-violet-950/90 backdrop-blur-sm hover:border-indigo-500/40 transition-all duration-300"
+          >
+            <button
+              onClick={() => toggleAccordion(key)}
+              className={`w-full px-6 py-5 flex items-center justify-between text-left transition-all duration-300 ${
+                activeAccordion === key 
+                  ? 'text-amber-400 bg-indigo-950/50' 
+                  : 'text-emerald-400 hover:text-amber-400'
+              }`}
+            >
+              <span className="font-mono text-xl sm:text-2xl tracking-wider">{title}</span>
+              <svg
+                className={`w-8 h-8 transform transition-transform duration-200 ${
+                  activeAccordion === key ? 'rotate-180 text-amber-400' : 'text-emerald-400'
+                }`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              className={`transition-all duration-300 ease-in-out ${
+                activeAccordion === key
+                  ? 'max-h-[800px] opacity-100'
+                  : 'max-h-0 opacity-0'
+              } overflow-hidden`}
+            >
+              <div className="px-6 py-6">
                 <motion.div
-                    key={activeTab}
-                    initial="hidden"
-                    animate="visible"
-                    exit="hidden"
-                    variants={container()}
-                    className="px-4 py-6 text-center"
+                  initial="hidden"
+                  animate={activeAccordion === key ? "visible" : "hidden"}
+                  variants={container()}
                 >
-                    {educationData[activeTab].content}
+                  {content}
                 </motion.div>
-            </AnimatePresence>
-        </div>
-    );
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Education;

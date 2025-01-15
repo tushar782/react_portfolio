@@ -81,7 +81,7 @@ const Project = () => {
       >
         <a
           href={resume}
-          download="Tushar_Pimple_Resume.pdf"
+          download="Tushar_Pimple.pdf"
           className="flex items-center justify-center space-x-2"
         >
           <FaDownload className="text-lg" />

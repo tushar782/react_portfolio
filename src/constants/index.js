@@ -1,7 +1,7 @@
 import project1 from "../assets/food.jpg";
 // import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/portfolio.jpg";
-import project4 from "../assets/gym1.jpg";
+import project4 from "../assets/auth.jpg";
 
 export const HERO_CONTENT = ` Dedicated Software Developer with one year of professional experience in
  JavaScript and React.js. Skilled in developing and implementing scalable,
@@ -111,16 +111,16 @@ export const PROJECTS = [
     technologies: ["HTML5", "CSS3", "React", "Bootstrap 5"],
   },
   {
-    title: "Gym Web Application",
+    title: "Authentication System",
     image: project4,
     description:
-      "A user interactive website that aims to set up step-wise workout, meditation, balanced dietary recommendations and user's daily schedules.",
-    technologies: ["HTML", "CSS", "Php", "MySQL"],
+      "A secure and efficient authentication system built using the MERN stack. This project includes user registration, login, JWT-based authentication, and role-based access control.",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js"],
   },
 ];
 
 export const CONTACT = {
   address: "India",
-  phoneNo: "+91 7522994318 ",
+  phoneNo: "+91 7522994318",
   email: "tusharpimple017@gmail.com",
 };

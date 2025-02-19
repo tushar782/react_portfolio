@@ -37,10 +37,10 @@ const App = () => {
         <div className="container mx-auto px-8">
           <Navbar />
           <Hero />
+          <Exprience />
           <Education />
           <About />
           <Technologies />
-          <Exprience />
           <Project />
           <Contact />
           <FloatingWhatsApp/>

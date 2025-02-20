@@ -2,7 +2,7 @@ import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import resume from "../assets/projects/Tushu.pdf";
+import resume from "../assets/projects/Tushar_Pimple.pdf";
 
 const Project = () => {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);

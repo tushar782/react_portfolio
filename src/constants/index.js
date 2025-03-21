@@ -3,8 +3,7 @@ import project1 from "../assets/food.jpg";
 import project3 from "../assets/portfolio.jpg";
 import project4 from "../assets/auth.jpg";
 
-export const HERO_CONTENT = `Full Stack Developer with 1.5 years of professional experience specializing in JavaScript, ES6+, React.js, Node.js, Express.js, and MongoDB. Adept at designing, developing, and deploying scalable, secure, and high-performance web applications optimized for both speed and functionality. Skilled in crafting intuitive, responsive user interfaces and robust backend solutions that ensure seamless user experiences through modern development practices and efficient coding techniques.`;
-
+export const HERO_CONTENT = ` Full Stack Developer with 1.5 years of professional experience specializing in JavaScript, ES6+, React.js, Node.js, Express.js, and MongoDB. Adept at designing, developing, and deploying scalable, secure, and high-performance web applications optimized for both speed and functionality. Skilled in crafting intuitive, responsive user interfaces and robust backend solutions that ensure seamless user experiences through modern development practices and efficient coding techniques.`;
 
 // export const ABOUT_TEXT = `I am a dedicated and versatile frontend developer with a passion for creating efficient and user-friendly web applications. With 1 year of professional experience, I have worked with a variety of technologies, including ReactJs, Python, JavaScript, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
@@ -112,6 +111,8 @@ export const PROJECTS = [
     description:
       "A secure and efficient authentication system built using the MERN stack. This project includes user registration, login, JWT-based authentication, and role-based access control.",
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    link: "https://rbac-git-main-tushars-projects-4fee5802.vercel.app/register",
+    github: "https://github.com/tushar782/JWT-AUTH" // Add this if available
   },
 ];
 

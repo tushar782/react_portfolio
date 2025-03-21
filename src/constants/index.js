@@ -62,30 +62,39 @@ export const EXPERIENCES = [
     year: "2023 - Present",
     role: "Full Stack Web Developer",
     company: "VISUAL INFOSYSTEMS Pvt. Ltd.",
-    description: `Lead a team in developing and maintaining web applications, including a School / College ERP management system, using JavaScript (ES6), Python, and Django. Implemented stored procedures and functions for data inserting and retrieving.`,
-    technologies: ["HTML5", "CSS", "Python", "Django", "JavaScript", "AJAX", "PostgreSQL"],
+    description: `Lead a team in developing and maintaining web applications, including a School/College ERP management system, using JavaScript (ES6), Python, and Django. Implemented stored procedures and functions for data inserting and retrieving. Designed and implemented a real-time notification system using WebSockets to alert users of important events and updates. Created a responsive dashboard to display real-time updates and notifications for both administrators and users. Optimized notification delivery to ensure timely alerts without impacting system performance.`,
+    technologies: ["HTML5", "CSS", "Bootstrap", "JavaScript & ES6+", "Python", "Django", "AJAX", "PostgreSql", "WebSockets", "socket.io", "GraphQL"],
+    projects: [
+      {
+        title: "School/College ERP Software",
+        description: "A comprehensive enterprise resource planning solution designed specifically for educational institutions. The system integrates all aspects of school/college management including student information management, admissions processing, fee management, academic records, staff management, examination scheduling, and resource allocation. Features include customizable data entry forms, advanced search and filtering capabilities, and provide deep insights into institutional operations.",
+        technologies: ["Python", "Django", "JavaScript & ES6+", "PostgreSql", "HTML5", "CSS", "Bootstrap", "AJAX", "WebSockets"],
+        // link: "https://erp-demo.visualinfosystems.com", // Replace with actual link if available
+        // github: "", // Replace with actual GitHub link if available
+      },
+      {
+        title: "EduTrack - Teacher Portal",
+        description: "A comprehensive web application designed for teachers to efficiently manage and monitor student progress. The portal includes detailed attendance tracking with visual analytics, customizable notice creation for classes or individual students, and in-depth performance reporting tools. Teachers can view daily, weekly, and annual performance metrics with customizable charts and graphs, communicate directly with parents through integrated messaging, and receive real-time notifications for important events. The application features a responsive dashboard that prioritizes the most critical information for quick access.",
+        technologies: ["React + Vite", "Python", "Django", "PostgreSql", "WebSockets", "socket.io"],
+        // link: "https://teacher-portal-demo.vercel.app", // Replace with actual link if available
+        // github: "https://github.com/yourusername/teacher-portal", // Replace with actual GitHub link if available
+      },
+      {
+        title: "EduConnect - Parent Portal",
+        description: "A mobile-first application that enables parents to stay connected with their child's educational journey. Parents can access real-time updates on attendance, academic performance, and upcoming assignments. The app send receipt generation and delivery via WhatsApp. Parents receive instant notifications about their child's attendance, performance changes, and school announcements. The application includes a direct communication channel with teachers, calendar integration for important dates, and visual representations of their child's progress compared to class averages. The intuitive interface ensures that even less tech-savvy parents can easily navigate and utilize all features.",
+        technologies: ["React + Vite", "Python", "Django", "PostgreSql", "WhatsApp API"],
+        // link: "https://parent-portal-demo.vercel.app", // Replace with actual link if available
+        // github: "https://github.com/yourusername/parent-portal", // Replace with actual GitHub link if available
+      }
+    ]
   },
   {
     year: "December-2022 - January-2023",
     role: "Frontend Developer (Intern)",
     company: "Compserv Consultants Pvt. Ltd. Kolhapur",
-    description: `Designed and developed Jasper Report using Php , JavaScript , HTML , CSS and PostgreSQL. Worked closely with backend developer to integrate frontend date with Backend. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Php", "PostgreSQL"],
+    description: `Designed and developed Jasper Report using Php, JavaScript, HTML, CSS and PostgreSQL. Worked closely with backend developer to integrate frontend date with Backend. Implemented responsive designs and optimized frontend performance. Created interactive UI components that enhanced user experience across different devices.`,
+    technologies: ["HTML", "CSS", "Php", "PostgreSQL", "JavaScript"],
   },
-  // {
-  //   year: "2021 - 2022",
-  //   role: "Full Stack Developer",
-  //   company: "Facebook",
-  //   description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-  //   technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  // },
-  // {
-  //   year: "2020 - 2021",
-  //   role: "Software Engineer",
-  //   company: "Paypal",
-  //   description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-  //   technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  // },
 ];
 
 export const PROJECTS = [
